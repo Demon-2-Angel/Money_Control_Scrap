@@ -24,15 +24,8 @@ jobs:
         pip install build
         pip install -r requirements.txt
 
-<<<<<<< HEAD:.github/workflows/python-package.yml
     - name: Build package
       run: python -m build
-=======
-    - name: Run tests  # Add your test commands here if you have tests
-      run: |
-        pip install pytest pytest-cov
-        pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
->>>>>>> 24767de497289813a0bf94c2c50bb71a4d2f29ee:.github/workflows/python-app.yml
 
     - name: Package and deploy
       env:
