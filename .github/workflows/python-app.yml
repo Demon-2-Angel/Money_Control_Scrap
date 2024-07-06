@@ -3,7 +3,7 @@ name: Money_Control_Scrap
 on:
   push:
     branches:
-      - src  # or your main branch name
+      - main  # or your main branch name
 
 jobs:
   build:
