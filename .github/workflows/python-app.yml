@@ -29,8 +29,9 @@ jobs:
         python -m build
 
     - name: Package and deploy
-      env:
+      with: 
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+      env:
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
         python setup.py sdist bdist_wheel
