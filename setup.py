@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='Money_Control_Scrap',
-    version='0.1.1',
+    version='0.1.2',
     author="Aniruddha Kumar",
     author_email="foraniruddhakumar@gmail.com",
     description="A package to scrape news from Money Control",
